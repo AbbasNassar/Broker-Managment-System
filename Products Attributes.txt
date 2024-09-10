@@ -1,0 +1,78 @@
+Here are suggested attributes for different types of real estate properties:
+
+1. Apartments
+Location (Address, city, neighborhood)
+Price
+Floor area (sq. meters/sq. feet)
+Number of bedrooms
+Number of bathrooms
+Balcony/Terrace
+Parking space
+Building amenities (Gym, pool, concierge, elevator)
+Year built
+Furnishing status (Furnished, semi-furnished, unfurnished)
+Type (Studio, penthouse, duplex)
+Floor level
+Maintenance fees
+Heating/Cooling system
+Pet policy
+Proximity to public transport
+2. Houses
+Location (Address, city, neighborhood)
+Price
+Land area (sq. meters/sq. feet)
+Built-up area (sq. meters/sq. feet)
+Number of bedrooms
+Number of bathrooms
+Number of floors
+Garage/Carport (Number of vehicles)
+Backyard/Garden size
+Swimming pool
+Basement/Attic
+Fireplace
+Year built
+Furnishing status (Furnished, semi-furnished, unfurnished)
+Heating/Cooling system
+Proximity to schools, shopping, healthcare
+3. Piece of Land
+Location (Address, city, neighborhood)
+Price per square meter/foot
+Total land area (sq. meters/sq. feet)
+Zoning type (Residential, commercial, industrial)
+Topography (Flat, sloped, hilly)
+Access to utilities (Water, electricity, gas, sewage)
+Road access (Paved, dirt)
+Building permits available
+Flood zone risk
+Proximity to amenities
+Environmental conditions (Protected land, forest)
+4. Stores (Retail)
+Location (Address, city, shopping district)
+Price
+Floor area (sq. meters/sq. feet)
+Foot traffic (Low, medium, high)
+Frontage (Display window size)
+Parking availability
+Storage space
+Loading dock
+Restroom facilities
+Proximity to public transport
+Security features (CCTV, alarm)
+Signage options
+Lease terms
+5. Event Halls
+Location (Address, city)
+Price per event/hour
+Capacity (Number of people)
+Floor area (sq. meters/sq. feet)
+Acoustic features
+Stage/Performance area
+Parking availability
+Lighting system
+Sound system
+Catering facilities
+Seating arrangements (Fixed, flexible)
+Restroom facilities
+Proximity to hotels and transportation
+Event types allowed (Weddings, corporate events, concerts)
+Let me know if you'd like any more specific details for any category.
