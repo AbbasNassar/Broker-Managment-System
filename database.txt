@@ -1,0 +1,143 @@
+create database Boker;
+
+use Boker;
+
+CREATE TABLE Clients (
+    client_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(32),
+    priority varchar(16),
+    address varchar(32),
+    email VARCHAR(50)
+);
+select * from Clients;
+
+CREATE TABLE ClientsIndividuals (
+    clientInd_id INT AUTO_INCREMENT PRIMARY KEY,
+    phone_number int,
+    FOREIGN KEY (clientInd_id) REFERENCES Clients(client_id)
+);
+
+CREATE TABLE ClientCompanies (
+    clientComp_id INT AUTO_INCREMENT PRIMARY KEY,
+    trading_number int,
+    phone_number int,
+    FOREIGN KEY (clientComp_id) REFERENCES Clients(client_id)
+);
+
+select * from ClientCompanies;
+
+
+CREATE TABLE Owners (
+    owner_id INT AUTO_INCREMENT PRIMARY KEY,
+    owner_name VARCHAR(32),
+    rating varchar(16),
+    address varchar(32),
+    email VARCHAR(50)
+);
+
+CREATE TABLE OwnerIndividuals (
+    ownerInd_id INT AUTO_INCREMENT PRIMARY KEY,
+    phone_number int,
+    FOREIGN KEY (ownerInd_id) REFERENCES Owners(owner_id)
+);
+
+CREATE TABLE OwnerCompanies (
+    ownerInd_id INT AUTO_INCREMENT PRIMARY KEY,
+    trading_number int,
+    phone_number int,
+    FOREIGN KEY (ownerInd_id) REFERENCES Owners(owner_id)
+);
+
+CREATE TABLE products (
+	PID int auto_increment primary key,
+    location varchar(32),
+    price real
+);
+
+CREATE TABLE land (
+	PID int auto_increment primary key,
+	totalLandArea real,
+    zoningType varchar(16),
+    topography varchar(16),
+    AccToUtils varchar(128),
+    buildPermit varchar(128),
+    envCond varchar(128),
+    proxToAmin varchar (128),
+    foreign key (PID) references products(PID)
+);
+
+CREATE TABLE apartment(
+	PID int auto_increment primary key,
+    apartmentArea real,
+    numOfBedRooms int,
+    numOfBathRooms int,
+    numOfBalcony int,
+    parkingSpace real,
+    buildAmenities varchar(128),
+    publicTransport boolean,
+    typeOfApart varchar(128),
+    yearBuilt date,
+    petPolicy varchar(128),
+    maintFees real,
+    heatingCooling varchar(128),
+    floorLvl int,
+    furnishingStatus varchar(128),
+	foreign key (PID) references products(PID)
+);
+
+Create table houses(
+	PID INT auto_increment primary key,
+    landArea int,
+    builtUpArea int,
+    numOfBedrooms int,
+    numOfBathrooms int,
+    swimmingPool varchar(128),
+    backyardGarden varchar(128),
+    garage varchar(128),
+    heatingCooling varchar(128),
+    basementAttic varchar(128),
+    proxToAmenities varchar(128),
+    numOfFloors int,
+    fireplace varchar(128),
+    yearBuilt date,
+    furnishingStatus varchar(128),
+    foreign key (PID) references products(PID)
+);
+
+CREATE TABLE EventHalls (
+    PID int auto_increment primary key,
+    floor_area real,
+    acoustic_features VARCHAR(128),
+    stage_performance_area varchar(128),
+    parking_availability VARCHAR(128),
+    sound_system VARCHAR(128),
+    catering_facilities VARCHAR(128),
+    lighting_system VARCHAR(128),
+    event_types_allowed VARCHAR(128),
+    restroom_facilities VARCHAR(128),
+    hotels_transportation VARCHAR(128),
+    seating_arrangements VARCHAR(128), 
+    foreign key (PID) references products(PID)
+);
+
+CREATE TABLE Stores (
+    PID int auto_increment primary key,
+    floor_area int,
+    foot_traffic INT,
+    parking_availability VARCHAR(128),
+    storage_space real,
+    loading_dock VARCHAR(128),
+    restroom_facilities VARCHAR(128),
+    proximity_to_public_transport VARCHAR(100),
+    security_features VARCHAR(128),
+    signage_options VARCHAR(128),
+    lease_terms VARCHAR(128), 
+    foreign key (PID) references products(PID)
+);
+
+
+
+
+
+
+
